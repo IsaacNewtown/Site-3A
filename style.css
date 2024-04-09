@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@300;400;700&display=swap');
 
 :root {
-  --cor-de-fundo: #721332;
-  --azul: #a057ff;
-  --branco: #FFFFFF;
-  --botao-ativo: #3A375E;
-  --botao-inativo: rgba(58, 55, 94, 0.5);
-  --texto-fundo: rgba(58, 55, 94, 0.3);
+  --cor-de-fundo: #ad1550;
+  --azul: #00ff95;
+  --branco: #ffffff;
+  --botao-ativo: #81183b;
+  --botao-inativo: rgba(104, 34, 67, 0.466);
+  --texto-fundo: rgba(29, 21, 77, 0.301);
 }
 
 body {
@@ -54,22 +54,48 @@ body {
     border-top: none;
 }
 
-
 .botao:first-child {
     border-radius: 40px 40px 0 0;
 }
-
 
 .botoes {
     display: block;
 }
 
-
-.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--branco);
 }
 
+
+.abas-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudos.ativo{
+    display:block;
+}
+
+.aba-conteudos{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--azul);
+    text-transform: uppercase;
+}
+.contador{
+    font-size: 20px;
+    text-align: center;
+}
 
 @media screen and (min-width: 768px) {
     .botoes {
@@ -84,3 +110,4 @@ body {
         border-radius: 0 40px 0 0;
     }
 }
+
