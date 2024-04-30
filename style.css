@@ -1,45 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@300;400;700&display=swap');
 
 :root {
-  --cor-de-fundo: #ad1550;
-  --azul: #00ffff;
-  --branco: #ffffff;
-  --botao-ativo: #81183b;
-  --botao-inativo: rgba(104, 34, 67, 0.466);
-  --texto-fundo: rgba(29, 21, 77, 0.301);
-}
-
-body {
-  background-color: var(--cor-de-fundo);
-  color: var(--branco);
-  font-family: "Oxygen", sans-serif;
-}
-
-
-.conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
+    --cor-de-fundo: #ad1550;
+    --verde: #00ffff;
+    --branco: #ffffff;
+    --botao-ativo: #81183b;
+    --botao-inativo: rgba(104, 34, 67, 0.466);
+    --texto-fundo: rgba(29, 21, 77, 0.301);
+  }
+  
+  body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: "Oxygen", sans-serif;
+  }
+  
+  
+  .conteudo-principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+  }
 
 .titulo-principal {
-    text-align: left;
-    width: 100%;
+    text-align: center;
+    width: 300%;
     font-size: 32px;
 }
 
 .titulo-principal span {
-    color: var(--azul);
+    color: var(--verde);
 }
 
 .botao {
-    font-family: "Crakra Petch", sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -64,21 +62,19 @@ body {
 
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--branco);
+    border-bottom: 4px solid var(--verde);
 }
 
-
-.abas-textos {
+.abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
-
-.aba-conteudos.ativo{
+.aba-conteudo.ativo{
     display:block;
 }
 
-.aba-conteudos{
+.aba-conteudo{
     display: none;
 }
 
@@ -86,18 +82,17 @@ body {
     font-size: 28px;
     text-align: center;
 }
-
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--azul);
+    color: var(--verde);
     text-transform: uppercase;
 }
-.contador{
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-}
 
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .contador-digito{
     padding: 0 16px;
     text-align: center;
@@ -111,7 +106,7 @@ body {
 }
 
 .contador-digito-texto{
-    color: var(--azul);
+    color: var(--verde);
     font-size: 20px;
     margin: 0;
 
